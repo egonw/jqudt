@@ -4,7 +4,9 @@ QUDT is "Quantities, Units, Dimensions and Data Types in OWL and XML"
 
     http://www.qudt.org/
 
-License: BSD
+QUDT is a CC-SA-BY project by NASA Ames Research Center and TopQuadrant, Inc.
+
+License of this Java library: new BSD
 
 Quick demo
 ==========
