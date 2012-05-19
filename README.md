@@ -1,3 +1,6 @@
+Introduction
+============
+
 Java Library to deal with QUDT units and conversions between them.
 
 QUDT is "Quantities, Units, Dimensions and Data Types in OWL and XML"
@@ -7,6 +10,11 @@ QUDT is "Quantities, Units, Dimensions and Data Types in OWL and XML"
 QUDT is a CC-SA-BY project by NASA Ames Research Center and TopQuadrant, Inc.
 
 License of this Java library: new BSD
+
+Status
+======
+
+The status of this library is alpha.
 
 Quick demo
 ==========
