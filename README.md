@@ -1,4 +1,8 @@
-Java Library to deal with QUTD units and conversions inbetween them.
+Java Library to deal with QUDT units and conversions between them.
+
+QUDT is "Quantities, Units, Dimensions and Data Types in OWL and XML"
+
+    http://www.qudt.org/
 
 License: BSD
 

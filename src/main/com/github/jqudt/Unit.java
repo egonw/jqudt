@@ -2,7 +2,7 @@
  *
  * License: new BSD
  */
-package com.github.jqutd;
+package com.github.jqudt;
 
 import java.net.URI;
 

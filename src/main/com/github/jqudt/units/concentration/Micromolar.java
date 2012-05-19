@@ -2,34 +2,34 @@
  *
  * License: new BSD
  */
-package com.github.jqutd.units.concentration;
+package com.github.jqudt.units.concentration;
 
 import java.net.URI;
 import java.net.URISyntaxException;
 
-import com.github.jqutd.Multiplier;
-import com.github.jqutd.Unit;
+import com.github.jqudt.Multiplier;
+import com.github.jqudt.Unit;
 
-public class Molar extends Unit {
+public class Micromolar extends Unit {
 
 	private static Unit instance;
 
-	private Molar() {
-		setAbbreviation("M");
-		setLabel("Molar");
+	private Micromolar() {
+		setAbbreviation("μM");
+		setLabel("Micromolar");
 		Multiplier multiplier = new Multiplier();
-		multiplier.setMultiplier(1000.0);
+		multiplier.setMultiplier(0.001);
 		multiplier.setOffset(0.0);
 		setMultiplier(multiplier);
 		try {
-			setResource(new URI("http://www.openphacts.org/units/Molar"));
+			setResource(new URI("http://www.openphacts.org/units/Micromolar"));
 			setType(new URI("http://qudt.org/schema/qudt#MolarConcentrationUnit"));
 		} catch (URISyntaxException e) { /* this exception will never happen */ } 
-		setSymbol("mol/dm^3");
+		setSymbol("μmol/dm^3");
 	}
 
 	public static Unit getInstance() {
-		if (instance == null) instance = new Molar();
+		if (instance == null) instance = new Micromolar();
 		return instance;
 	}
 

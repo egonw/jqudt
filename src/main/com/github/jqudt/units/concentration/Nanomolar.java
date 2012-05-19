@@ -2,13 +2,13 @@
  *
  * License: new BSD
  */
-package com.github.jqutd.units.concentration;
+package com.github.jqudt.units.concentration;
 
 import java.net.URI;
 import java.net.URISyntaxException;
 
-import com.github.jqutd.Multiplier;
-import com.github.jqutd.Unit;
+import com.github.jqudt.Multiplier;
+import com.github.jqudt.Unit;
 
 public class Nanomolar extends Unit {
 

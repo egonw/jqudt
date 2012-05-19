@@ -2,13 +2,13 @@
  *
  * License: new BSD
  */
-package com.github.jqutd.demo;
+package com.github.jqudt.demo;
 
-import com.github.jqutd.Measurement;
-import com.github.jqutd.units.concentration.Micromolar;
-import com.github.jqutd.units.concentration.Nanomolar;
-import com.github.jqutd.units.temperature.Celsius;
-import com.github.jqutd.units.temperature.Kelvin;
+import com.github.jqudt.Measurement;
+import com.github.jqudt.units.concentration.Micromolar;
+import com.github.jqudt.units.concentration.Nanomolar;
+import com.github.jqudt.units.temperature.Celsius;
+import com.github.jqudt.units.temperature.Kelvin;
 
 public class Demo {
 
