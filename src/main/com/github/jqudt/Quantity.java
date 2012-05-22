@@ -4,14 +4,14 @@
  */
 package com.github.jqudt;
 
-public class Measurement {
+public class Quantity {
 
 	private double value;
 	private Unit unit;
 
-	private Measurement() {}
+	private Quantity() {}
 
-	public Measurement(double value, Unit unit) {
+	public Quantity(double value, Unit unit) {
 		this.value = value;
 		this.unit = unit;
 	}
@@ -29,7 +29,7 @@ public class Measurement {
 		this.unit = unit;
 	}
 
-	public Measurement convertTo(Unit newUnit) throws IllegalArgumentException, IllegalAccessException {
+	public Quantity convertTo(Unit newUnit) throws IllegalArgumentException, IllegalAccessException {
 		if (newUnit == null)
 			throw new IllegalArgumentException(
 				"Target unit cannot be null"
@@ -47,7 +47,7 @@ public class Measurement {
 				"The new unit does not have the same parent type"
 			);
 
-		Measurement newMeasurement = new Measurement();
+		Quantity newMeasurement = new Quantity();
 		newMeasurement.setUnit(newUnit);
 		newMeasurement.setValue(
 			((value
