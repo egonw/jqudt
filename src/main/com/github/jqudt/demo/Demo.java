@@ -8,6 +8,7 @@ import com.github.jqudt.Measurement;
 import com.github.jqudt.units.concentration.Micromolar;
 import com.github.jqudt.units.concentration.Nanomolar;
 import com.github.jqudt.units.temperature.Celsius;
+import com.github.jqudt.units.temperature.Fahrenheit;
 import com.github.jqudt.units.temperature.Kelvin;
 
 public class Demo {
@@ -18,6 +19,7 @@ public class Demo {
 
 		Measurement temp = new Measurement(20, Celsius.getInstance());
 		System.out.println(temp + " = " +  temp.convertTo(Kelvin.getInstance()));
-}
+		System.out.println(temp + " = " +  temp.convertTo(Fahrenheit.getInstance()));
+	}
 
 }

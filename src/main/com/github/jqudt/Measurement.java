@@ -52,9 +52,9 @@ public class Measurement {
 		newMeasurement.setValue(
 			((value
 			// convert to the base unit
-			* unit.getMultiplier().getMultiplier() - unit.getMultiplier().getOffset())
+			* unit.getMultiplier().getMultiplier() + unit.getMultiplier().getOffset())
 			// convert the base unit to the new unit
-			+ newUnit.getMultiplier().getOffset()) / newUnit.getMultiplier().getMultiplier() 
+			- newUnit.getMultiplier().getOffset()) / newUnit.getMultiplier().getMultiplier() 
 		);
 
 		return newMeasurement;
