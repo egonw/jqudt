@@ -19,7 +19,7 @@ public class Celsius extends Unit {
 		setLabel("Celsius");
 		Multiplier multiplier = new Multiplier();
 		multiplier.setMultiplier(1.0);
-		multiplier.setOffset(-273);
+		multiplier.setOffset(273.15);
 		setMultiplier(multiplier);
 		try {
 			setResource(new URI("http://www.openphacts.org/units/Celsius"));
