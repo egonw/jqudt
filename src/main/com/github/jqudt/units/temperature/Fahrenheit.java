@@ -22,8 +22,8 @@ public class Fahrenheit extends Unit {
 		multiplier.setOffset(255.37037037037037037);
 		setMultiplier(multiplier);
 		try {
-			setResource(new URI("http://www.openphacts.org/units/Kelvin"));
-			setType(new URI("http://qudt.org/schema/qudt#Kelvin"));
+			setResource(new URI("http://qudt.org/vocab/unit#DegreeFahrenheit"));
+			setType(new URI("http://qudt.org/vocab/unit#Kelvin"));
 		} catch (URISyntaxException e) { /* this exception will never happen */ } 
 		setSymbol("K");
 	}

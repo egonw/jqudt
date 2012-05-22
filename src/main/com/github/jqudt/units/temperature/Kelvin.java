@@ -22,8 +22,8 @@ public class Kelvin extends Unit {
 		multiplier.setOffset(0.0);
 		setMultiplier(multiplier);
 		try {
-			setResource(new URI("http://www.openphacts.org/units/Kelvin"));
-			setType(new URI("http://qudt.org/schema/qudt#Kelvin"));
+			setResource(new URI("http://qudt.org/vocab/unit#Kelvin"));
+			setType(new URI("http://qudt.org/vocab/unit#Kelvin"));
 		} catch (URISyntaxException e) { /* this exception will never happen */ } 
 		setSymbol("K");
 	}
