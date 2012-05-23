@@ -87,7 +87,6 @@ public class UnitFactory {
 					if (type instanceof org.openrdf.model.URI) {
 						org.openrdf.model.URI typeURI = (org.openrdf.model.URI)type;
 						if (!shouldBeIgnored(typeURI)) {
-							System.out.println(statement);
 							unit.setType(new URI(typeURI.stringValue()));
 						}
 					}
