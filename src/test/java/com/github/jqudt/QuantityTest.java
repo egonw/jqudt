@@ -7,7 +7,7 @@ package com.github.jqudt;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.github.jqudt.units.temperature.Celsius;
+import com.github.jqudt.onto.units.TemperatureUnit;
 
 public class QuantityTest {
 
@@ -20,8 +20,8 @@ public class QuantityTest {
 
 	@Test
 	public void testConstructor() {
-		Quantity quantity = new Quantity(0.1, Celsius.getInstance());
+		Quantity quantity = new Quantity(0.1, TemperatureUnit.CELSIUS);
 		Assert.assertEquals(0.1, quantity.getValue(), 0.01);
-		Assert.assertEquals(Celsius.getInstance(), quantity.getUnit());
+		Assert.assertEquals(TemperatureUnit.CELSIUS, quantity.getUnit());
 	}
 }
