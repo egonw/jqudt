@@ -4,6 +4,8 @@
  */
 package com.github.jqudt.onto;
 
+import java.util.List;
+
 import junit.framework.Assert;
 
 import org.junit.Test;
@@ -29,5 +31,13 @@ public class UnitFactoryTest {
 		Assert.assertEquals(1, unit.getMultiplier().getMultiplier(), 0.01);
 		Assert.assertEquals(0, unit.getMultiplier().getOffset(), 0.01);
 		Assert.assertEquals("http://qudt.org/schema/qudt#TemperatureUnit", unit.getType().toString());
+	}
+
+	@Test
+	public void testGetURIs() throws Exception {
+		UnitFactory factory = UnitFactory.getInstance();
+		List<String> units = factory.getURIs("http://qudt.org/schema/qudt#TemperatureUnit");
+		Assert.assertNotNull(units);
+		Assert.assertNotSame(0, units.size());
 	}
 }

@@ -6,6 +6,8 @@ package com.github.jqudt.onto;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import org.openrdf.model.Statement;
@@ -100,6 +102,38 @@ public class UnitFactory {
 		}
 
 		return unit;
+	}
+
+	public List<String> getURIs(String type) {
+		URI uri;
+		try {
+			uri = new URI(type);
+		} catch (URISyntaxException exception) {
+			throw new IllegalStateException("Invalid URI: " + type, exception);
+		}
+		return getURIs(uri);
+	}
+	
+	public List<String> getURIs(URI type) {
+		if (type == null) throw new IllegalArgumentException("The type cannot be null");
+
+		ValueFactory f = repos.getValueFactory();
+		org.openrdf.model.URI uri = f.createURI(type.toString());
+		
+		try {
+			RepositoryConnection con = repos.getConnection();
+			List<Statement> statements = con.getStatements(null, null, uri, true).asList();
+			if (statements.size() == 0)
+				return Collections.emptyList();
+
+			List<String> units = new ArrayList<String>();
+			for (Statement statement : statements) {
+				units.add(statement.getSubject().toString());
+			}
+			return units; 
+		} catch (Exception exception) {
+			throw new IllegalStateException("Error while getting the units: " + exception.getMessage(), exception);
+		}
 	}
 
 	private boolean shouldBeIgnored(org.openrdf.model.URI typeURI) {
