@@ -1,0 +1,26 @@
+/* Copyright (C) 2012  Egon Willighagen <egonw@users.sf.net>
+ *
+ * License: new BSD
+ */
+package com.github.jqudt.onto;
+
+import org.openrdf.model.URI;
+import org.openrdf.model.ValueFactory;
+import org.openrdf.model.impl.ValueFactoryImpl;
+
+public class QUDT {
+
+	private static ValueFactory factory = new ValueFactoryImpl();
+
+	public final static String namespace = "http://qudt.org/schema/qudt#";
+
+	private static final URI getURI(String localPart) {
+		return factory.createURI(namespace, localPart);
+	}
+
+	public final static URI SYMBOL = getURI("symbol");
+	public final static URI ABBREVIATION = getURI("abbreviation");
+	public final static URI CONVERSION_OFFSET = getURI("conversionOffset");
+	public final static URI CONVERSION_MULTIPLIER = getURI("conversionMultiplier");
+
+}
