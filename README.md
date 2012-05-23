@@ -21,11 +21,11 @@ Quick demo
 
 Source:
 
-    Measurement obs = new Measurement(0.1, Micromolar.getInstance());
+    Quantity obs = new Quantity(0.1, Micromolar.getInstance());
     System.out.println(obs + " = " +  obs.convertTo(Nanomolar.getInstance()));
     
-    Measurement temp = new Measurement(20, Celsius.getInstance());
-    System.out.println(temp + " = " +  temp.convertTo(Kelvin.getInstance()));
+    Quantity temp = new Quantity(20, TemperatureUnit.CELSIUS);
+    System.out.println(temp + " = " +  temp.convertTo(TemperatureUnit.KELVIN));
 
 Output
 
