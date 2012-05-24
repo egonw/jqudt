@@ -19,6 +19,10 @@ The status of this library is alpha.
 Quick demo
 ==========
 
+Keep in mind, that the below conversions are purely derived from the information
+defined in the QUDT ontology, taking advantage from the fact that the have the
+same unit type, qudt:MolarConcentrationUnit and qudt:TemperatureUnit respectively.
+
 Source:
 
     Quantity obs = new Quantity(0.1, Micromolar.getInstance());
