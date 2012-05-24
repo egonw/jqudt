@@ -13,7 +13,7 @@ import com.github.jqudt.onto.units.ConcentrationUnit;
 public class NanomolarTest {
 
 	@Test
-	public void testAbsoluteZero() throws IllegalArgumentException, IllegalAccessException {
+	public void testMolarConversion() throws IllegalArgumentException, IllegalAccessException {
 		Quantity obs = new Quantity(0.1, ConcentrationUnit.MICROMOLAR);
 		Quantity obs2 =  obs.convertTo(ConcentrationUnit.NANOMOLAR);
 		Assert.assertEquals(ConcentrationUnit.NANOMOLAR, obs2.getUnit());
