@@ -1,0 +1,60 @@
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix qudt:    <http://qudt.org/schema/qudt#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix ops:     <http://www.openphacts.org/units/> .
+
+ops:Molar
+ rdf:type qudt:MolarConcentrationUnit , qudt:SIDerivedUnit ;
+ rdfs:label "Molar"^^xsd:string ;
+ qudt:abbreviation "M"^^xsd:string ;
+ qudt:conversionMultiplier
+  1000 ;
+ qudt:conversionOffset
+  "0.0"^^xsd:double ;
+ qudt:symbol "mol/dm^3"^^xsd:string ;
+ skos:exactMatch <http://dbpedia.org/resource/Molar_concentration> .
+
+ops:Millimolar    
+ rdf:type qudt:MolarConcentrationUnit , qudt:SIDerivedUnit ;
+ rdfs:label "Millimolar"^^xsd:string ;
+ qudt:abbreviation "mM"^^xsd:string ;
+ qudt:conversionMultiplier
+  1 ;
+ qudt:conversionOffset
+  "0.0"^^xsd:double ; 
+ qudt:symbol "mmol/dm^3"^^xsd:string .
+
+ops:Micromolar
+ rdf:type qudt:MolarConcentrationUnit , qudt:SIDerivedUnit ;
+ rdfs:label "Micromolar"^^xsd:string ;
+ qudt:abbreviation "μM"^^xsd:string ;
+ qudt:conversionMultiplier
+  0.001 ;
+ qudt:conversionOffset
+  "0.0"^^xsd:double ; 
+ qudt:symbol "μmol/dm^3"^^xsd:string .
+
+ops:Nanomolar
+ rdf:type qudt:MolarConcentrationUnit , qudt:SIDerivedUnit ;
+ rdfs:label "Nanomolar"^^xsd:string ;
+ qudt:abbreviation "nM"^^xsd:string ;
+ qudt:conversionMultiplier
+  0.000001 ;
+ qudt:conversionOffset
+  "0.0"^^xsd:double ;
+ qudt:symbol "nmol/dm^3"^^xsd:string .
+
+ops:Picomolar
+ rdf:type qudt:MolarConcentrationUnit , qudt:SIDerivedUnit ;
+ rdfs:label "Picomolar"^^xsd:string ;
+ qudt:abbreviation "pM"^^xsd:string ;
+ qudt:conversionMultiplier
+  0.000000001 ;
+ qudt:conversionOffset
+  "0.0"^^xsd:double ;
+ qudt:symbol "pmol/dm^3"^^xsd:string .
+

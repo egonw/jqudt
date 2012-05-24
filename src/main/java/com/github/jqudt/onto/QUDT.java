@@ -25,6 +25,7 @@ public class QUDT {
 
 	public final static URI SI_UNIT = getURI("SIUnit");
 	public final static URI SI_BASE_UNIT = getURI("SIBaseUnit");
+	public final static URI SI_DERIVED_UNIT = getURI("SIDerivedUnit");
 	public final static URI DERIVED_UNIT = getURI("DerivedUnit");
 	public final static URI NOT_USED_WITH_SI_UNIT = getURI("NotUsedWithSIUnit");
 

@@ -20,6 +20,10 @@ public class OntoReader {
 
 		String filename = "onto/" + ontology;
         InputStream ins = OntoReader.class.getClassLoader().getResourceAsStream(filename);
-		con.add(ins, "", RDFFormat.RDFXML);
+        if (ontology.endsWith(".ttl")) {
+        	con.add(ins, "", RDFFormat.TURTLE);
+        } else {
+        	con.add(ins, "", RDFFormat.RDFXML);
+        }
 	}
 }

@@ -35,6 +35,7 @@ public class UnitFactory {
 			OntoReader.read(repos, "unit");
 			OntoReader.read(repos, "qudt");
 			OntoReader.read(repos, "quantity");
+			OntoReader.read(repos, "ops.ttl");
 		} catch (Exception exception) {
 			throw new IllegalStateException(
 				"Could not load the QUDT ontologies: " + exception.getMessage(), exception
@@ -140,6 +141,7 @@ public class UnitFactory {
 		// accept anything outside the QUDT namespace
 		if (!typeURI.getNamespace().equals(QUDT.namespace)) return false;
 
+		if (typeURI.equals(QUDT.SI_DERIVED_UNIT)) return true;
 		if (typeURI.equals(QUDT.SI_BASE_UNIT)) return true;
 		if (typeURI.equals(QUDT.SI_UNIT)) return true;
 		if (typeURI.equals(QUDT.DERIVED_UNIT)) return true;
