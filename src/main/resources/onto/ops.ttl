@@ -58,3 +58,27 @@ ops:Picomolar
   "0.0"^^xsd:double ;
  qudt:symbol "pmol/dm^3"^^xsd:string .
 
+ops:GramPerLiter
+ rdf:type qudt:MassPerVolumeUnit, qudt:SIDerivedUnit, qudt:DerivedUnit ;
+ rdfs:label "Gram per Liter"^^xsd:string ;
+ qudt:abbreviation "g/L"^^xsd:string ;
+ qudt:conversionMultiplier 1.0 ;
+ qudt:conversionOffset 0.0 ;
+ qudt:symbol "g/dm^3"^^xsd:string .
+
+ops:MicrogramPerMilliliter 
+ rdf:type qudt:MassPerVolumeUnit, qudt:SIDerivedUnit, qudt:DerivedUnit ;
+ rdfs:label "Microgram per Milliliter"^^xsd:string ;
+ qudt:abbreviation "μg/mL"^^xsd:string ;
+ qudt:conversionMultiplier 1.0 ;
+ qudt:conversionOffset 0.0 ;
+ qudt:symbol "μg/cm^3"^^xsd:string .
+
+ops:PicogramPerMilliliter
+ rdf:type qudt:MassPerVolumeUnit, qudt:SIDerivedUnit, qudt:DerivedUnit ;
+ rdfs:label "Picogram per Milliliter"^^xsd:string ;
+ qudt:abbreviation "pg/mL"^^xsd:string ;
+ qudt:conversionMultiplier 0.000001 ;
+ qudt:conversionOffset 0.0 ;
+ qudt:symbol "pg/cm^3"^^xsd:string .
+
