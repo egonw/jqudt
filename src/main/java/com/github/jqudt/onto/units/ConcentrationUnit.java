@@ -18,4 +18,8 @@ public class ConcentrationUnit {
 	public static Unit NANOMOLAR = UnitFactory.getInstance().getUnit("http://www.openphacts.org/units/Nanomolar");
 	public static Unit MICROMOLAR = UnitFactory.getInstance().getUnit("http://www.openphacts.org/units/Micromolar");
 
+	public static Unit GRAM_PER_LITER = UnitFactory.getInstance().getUnit("http://www.openphacts.org/units/GramPerLiter");
+	public static Unit MICROGRAM_PER_MILLILITER = UnitFactory.getInstance().getUnit("http://www.openphacts.org/units/MicrogramPerMilliliter");
+	public static Unit PICOGRAM_PER_MILLILITER = UnitFactory.getInstance().getUnit("http://www.openphacts.org/units/PicogramPerMilliliter");
+
 }
