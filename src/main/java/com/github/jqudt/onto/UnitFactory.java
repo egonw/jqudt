@@ -94,7 +94,7 @@ public class UnitFactory {
 						}
 					}
 				} else {
-					System.out.println("Ignoring: " + statement);
+					// System.out.println("Ignoring: " + statement);
 				}
 			}
 			unit.setMultiplier(multiplier);
