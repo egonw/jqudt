@@ -68,4 +68,14 @@ public class Unit {
 		return (this.getAbbreviation() == null ? "" : this.getAbbreviation());
 	}
 
+	public boolean equals(Object obj) {
+		if (!(obj instanceof Unit)) return false;
+
+		return (obj.hashCode() == this.hashCode());
+	}
+
+	public int hashCode() {
+		return resource == null ? "".hashCode() : resource.toString().hashCode();
+	}
+
 }

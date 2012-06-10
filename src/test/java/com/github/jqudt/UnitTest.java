@@ -23,6 +23,17 @@ public class UnitTest {
 	}
 
 	@Test
+	public void testEquals() throws Exception {
+		Unit unit1 = new Unit();
+		URI resource1 = new URI("http://qudt.org/vocab/unit#Kelvin");
+		unit1.setResource(resource1);
+		Unit unit2 = new Unit();
+		URI resource2 = new URI("http://qudt.org/vocab/unit#Kelvin");
+		unit2.setResource(resource2);
+		Assert.assertEquals(unit1, unit2);
+	}
+
+	@Test
 	public void testType() throws Exception {
 		Unit unit = new Unit();
 		URI resource = new URI("http://qudt.org/vocab/unit#Kelvin");
