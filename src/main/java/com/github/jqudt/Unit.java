@@ -65,7 +65,7 @@ public class Unit {
 	}
 
 	public String toString() {
-		return this.getAbbreviation();
+		return (this.getAbbreviation() == null ? "" : this.getAbbreviation());
 	}
 
 }
