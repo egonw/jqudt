@@ -66,6 +66,14 @@ ops:GramPerLiter
  qudt:conversionOffset 0.0 ;
  qudt:symbol "g/dm^3"^^xsd:string .
 
+ops:MilligramPerMilliliter 
+ rdf:type qudt:MassPerVolumeUnit, qudt:SIDerivedUnit, qudt:DerivedUnit ;
+ rdfs:label "Milligram per Milliliter"^^xsd:string ;
+ qudt:abbreviation "mg/mL"^^xsd:string ;
+ qudt:conversionMultiplier 1000.0 ;
+ qudt:conversionOffset 0.0 ;
+ qudt:symbol "mg/cm^3"^^xsd:string .
+
 ops:MicrogramPerMilliliter 
  rdf:type qudt:MassPerVolumeUnit, qudt:SIDerivedUnit, qudt:DerivedUnit ;
  rdfs:label "Microgram per Milliliter"^^xsd:string ;
@@ -73,6 +81,14 @@ ops:MicrogramPerMilliliter
  qudt:conversionMultiplier 1.0 ;
  qudt:conversionOffset 0.0 ;
  qudt:symbol "μg/cm^3"^^xsd:string .
+
+ops:NanogramPerMilliliter 
+ rdf:type qudt:MassPerVolumeUnit, qudt:SIDerivedUnit, qudt:DerivedUnit ;
+ rdfs:label "Nanogram per Milliliter"^^xsd:string ;
+ qudt:abbreviation "ng/mL"^^xsd:string ;
+ qudt:conversionMultiplier 0.001 ;
+ qudt:conversionOffset 0.0 ;
+ qudt:symbol "ng/cm^3"^^xsd:string .
 
 ops:PicogramPerMilliliter
  rdf:type qudt:MassPerVolumeUnit, qudt:SIDerivedUnit, qudt:DerivedUnit ;
@@ -82,3 +98,9 @@ ops:PicogramPerMilliliter
  qudt:conversionOffset 0.0 ;
  qudt:symbol "pg/cm^3"^^xsd:string .
 
+ops:MilligramPerDeciliter 
+ rdf:type qudt:MassPerVolumeUnit, qudt:SIDerivedUnit, qudt:DerivedUnit ;
+ rdfs:label "Milligram per Deciliter"^^xsd:string ;
+ qudt:abbreviation "mg/dL"^^xsd:string ;
+ qudt:conversionMultiplier 100.0 ;
+ qudt:conversionOffset 0.0 .
