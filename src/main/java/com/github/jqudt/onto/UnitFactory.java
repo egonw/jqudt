@@ -146,6 +146,7 @@ public class UnitFactory {
 		if (typeURI.equals(QUDT.SI_UNIT)) return true;
 		if (typeURI.equals(QUDT.DERIVED_UNIT)) return true;
 		if (typeURI.equals(QUDT.NOT_USED_WITH_SI_UNIT)) return true;
+		if (typeURI.equals(QUDT.USED_WITH_SI_UNIT)) return true;
 
 		// everything else is fine too
 		return false;
