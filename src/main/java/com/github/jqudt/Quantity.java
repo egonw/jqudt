@@ -44,7 +44,8 @@ public class Quantity {
 
 		if (!unit.getType().equals(newUnit.getType()))
 			throw new IllegalAccessException(
-				"The new unit does not have the same parent type"
+				"The new unit does not have the same parent type " +
+				"(source: " + unit.getType() + "; target: " + newUnit.getType() + ")"
 			);
 
 		Quantity newMeasurement = new Quantity();
