@@ -54,4 +54,12 @@ public class UnitFactoryTest {
 		Assert.assertEquals("http://qudt.org/schema/qudt#MolarConcentrationUnit", unit.getType().toString());
 	}
 
+	@Test
+	public void testGetOpenPHACTSUnit_Newer() throws Exception {
+		UnitFactory factory = UnitFactory.getInstance();
+		Unit unit = factory.getUnit("http://www.openphacts.org/units/NanogramPerMilliliter");
+		Assert.assertNotNull(unit);
+		Assert.assertEquals("http://qudt.org/schema/qudt#MassPerVolumeUnit", unit.getType().toString());
+	}
+
 }
