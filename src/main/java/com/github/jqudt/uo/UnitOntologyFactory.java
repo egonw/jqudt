@@ -30,6 +30,20 @@ public class UnitOntologyFactory {
 	    {		
 		    put(longURI("uo:UO_0000065"), longURI("ops:Nanomolar"));
 		    put(longURI("uo:UO_0000064"), longURI("ops:Micromolar"));
+		    put(longURI("uo:UO_0000066"), longURI("ops:Picomolar"));
+		    put(longURI("uo:UO_0000062"), longURI("ops:Molar"));
+		    put(longURI("uo:UO_0000063"), longURI("ops:Millimolar"));
+		    put(longURI("uo:UO_0000175"), longURI("ops:GramPerLiter"));
+		    put(longURI("uo:UO_0000274"), longURI("ops:MicrogramPerMilliliter"));
+		    put(longURI("uo:EFO_0004385"), longURI("ops:PicogramPerMilliliter"));
+		    put(longURI("uo:UO_0000275"), longURI("ops:NanogramPerMilliliter"));
+		    put(longURI("uo:UO_0000176"), longURI("ops:MilligramPerMilliliter"));
+		    put(longURI("uo:EFO_0004374"), longURI("ops:MilligramPerDeciliter"));
+		    put(longURI("uo:UO_0000187"), longURI("qudt:floatPercentage"));
+		    put(longURI("uo:UO_0000032"), longURI("qudt:Hour"));
+		    put(longURI("uo:UO_0000031"), longURI("qudt:MinuteTime"));
+		    put(longURI("uo:UO_0000010"), longURI("qudt:SecondTime"));
+		    put(longURI("uo:UO_0000033"), longURI("qudt:Day"));
 	    }
 	};
 	private Map<String,String> qudt2uo = null;
