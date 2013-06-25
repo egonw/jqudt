@@ -104,3 +104,14 @@ ops:MilligramPerDeciliter
  qudt:abbreviation "mg/dL"^^xsd:string ;
  qudt:conversionMultiplier 100.0 ;
  qudt:conversionOffset 0.0 .
+
+ops:SquareAngstrom
+ rdf:type qudt:AreaUnit, qudt:SIDerivedUnit ;
+ rdfs:label "Square Ångström"^^xsd:string ;
+ qudt:abbreviation "Å^2"^^xsd:string ;
+ qudt:conversionMultiplier
+  0.00000000000000000001 ;
+ qudt:conversionOffset
+  "0.0"^^xsd:double ; 
+ qudt:symbol "Å^2"^^xsd:string .
+  
