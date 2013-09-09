@@ -105,6 +105,13 @@ ops:MilligramPerDeciliter
  qudt:conversionMultiplier 100.0 ;
  qudt:conversionOffset 0.0 .
 
+ops:Nanometer
+ rdf:type qudt:LengthUnit, qudt:SIDerivedUnit, qudt:DerivedUnit ;
+ rdfs:label "Nanometer"^^xsd:string ;
+ qudt:abbreviation "nm"^^xsd:string ;
+ qudt:conversionMultiplier 0.00000001 ;
+ qudt:conversionOffset 0.0 .
+ 
 ops:SquareAngstrom
  rdf:type qudt:AreaUnit, qudt:SIDerivedUnit ;
  rdfs:label "Square Ångström"^^xsd:string ;
