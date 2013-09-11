@@ -41,7 +41,7 @@ public class UnitOntologyFactory {
 		    put(longURI("uo:UO_0000066"), longURI("ops:Picomolar"));
 		    put(longURI("uo:UO_0000175"), longURI("ops:GramPerLiter"));
 		    put(longURI("uo:UO_0000176"), longURI("ops:MilligramPerMilliliter"));
-		    put(longURI("uo:UO_0000187"), longURI("qudt:floatPercentage"));
+		    put(longURI("uo:UO_0000187"), longURI("qudt:Percent"));
 		    put(longURI("uo:UO_0000274"), longURI("ops:MicrogramPerMilliliter"));
 		    put(longURI("uo:UO_0000275"), longURI("ops:NanogramPerMilliliter"));
 	    }
