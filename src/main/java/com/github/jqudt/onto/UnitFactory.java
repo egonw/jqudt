@@ -14,8 +14,10 @@ import org.openrdf.model.Statement;
 import org.openrdf.model.ValueFactory;
 import org.openrdf.model.vocabulary.RDF;
 import org.openrdf.model.vocabulary.RDFS;
+import org.openrdf.model.vocabulary.XMLSchema;
 import org.openrdf.repository.Repository;
 import org.openrdf.repository.RepositoryConnection;
+import org.openrdf.repository.RepositoryException;
 import org.openrdf.repository.sail.SailRepository;
 import org.openrdf.sail.memory.MemoryStore;
 
@@ -103,6 +105,35 @@ public class UnitFactory {
 		}
 
 		return unit;
+	}
+
+	public List<Unit> findUnits(String symbol) {
+		if (symbol == null) throw new IllegalArgumentException("The symbol cannot be null");
+
+		ValueFactory f = repos.getValueFactory();
+		try {
+			RepositoryConnection con = repos.getConnection();
+			List<Statement> statements = con.getStatements(
+				null, QUDT.ABBREVIATION, f.createLiteral(symbol, XMLSchema.STRING), true
+			).asList();
+			if (statements.size() == 0) return Collections.emptyList();
+			List<Unit> foundUnits = new ArrayList<Unit>();
+			for (Statement statement : statements) {
+				Object type = statement.getSubject();
+				try {
+					if (type instanceof org.openrdf.model.URI) {
+						org.openrdf.model.URI typeURI = (org.openrdf.model.URI)type;
+						foundUnits.add(getUnit(typeURI.toString()));
+					}
+				} catch (Exception exception) {
+					// ignore
+				}
+			}
+			return foundUnits;
+		} catch (RepositoryException e) {
+			e.printStackTrace();
+		}
+		return Collections.emptyList();
 	}
 
 	public List<String> getURIs(String type) {

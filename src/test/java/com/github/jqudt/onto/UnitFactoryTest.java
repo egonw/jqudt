@@ -62,4 +62,13 @@ public class UnitFactoryTest {
 		Assert.assertEquals("http://qudt.org/schema/qudt#MassPerVolumeUnit", unit.getType().toString());
 	}
 
+	@Test
+	public void testFindUnits() throws Exception {
+		UnitFactory factory = UnitFactory.getInstance();
+		List<Unit> units = factory.findUnits("nM");
+		Assert.assertNotNull(units);
+		Assert.assertNotSame(0, units.size());
+		Assert.assertEquals("http://www.openphacts.org/units/Nanomolar", units.get(0).getResource().toString());
+	}
+
 }
