@@ -6,8 +6,7 @@ package com.github.jqudt.onto;
 
 import java.io.IOException;
 
-import junit.framework.Assert;
-
+import org.junit.Assert;
 import org.junit.Test;
 import org.openrdf.model.URI;
 import org.openrdf.repository.RepositoryException;

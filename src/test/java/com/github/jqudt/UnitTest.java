@@ -6,8 +6,7 @@ package com.github.jqudt;
 
 import java.net.URI;
 
-import junit.framework.Assert;
-
+import org.junit.Assert;
 import org.junit.Test;
 
 public class UnitTest {
