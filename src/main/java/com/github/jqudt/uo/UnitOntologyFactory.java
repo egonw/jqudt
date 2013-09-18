@@ -66,10 +66,10 @@ public class UnitOntologyFactory {
 		    put(longURI("uo:UO_0000175"), longURI("ops:GramPerLiter"));
 		    put(longURI("uo:UO_0000176"), longURI("ops:MilligramPerMilliliter"));
 		    put(longURI("uo:UO_0000187"), longURI("qudt:Percent"));
-//		    put(longURI("uo:UO_0000197"), longURI(""));
-//		    put(longURI("uo:UO_0000198"), longURI(""));
-//		    put(longURI("uo:UO_0000271"), longURI(""));
-//		    put(longURI("uo:UO_0000272"), longURI(""));
+		    put(longURI("uo:UO_0000197"), longURI("ops:LiterPerKilogram"));
+		    put(longURI("uo:UO_0000198"), longURI("ops:MilliliterPerKilogram"));
+		    put(longURI("uo:UO_0000271"), longURI("ops:MicroliterPerMinute"));
+		    put(longURI("uo:UO_0000272"), longURI("qudt:MillimeterOfMercury"));
 		    put(longURI("uo:UO_0000274"), longURI("ops:MicrogramPerMilliliter"));
 		    put(longURI("uo:UO_0000275"), longURI("ops:NanogramPerMilliliter"));
 		    put(longURI("uo:UO_0000308"), longURI("ops:MilligramPerKilogram"));
