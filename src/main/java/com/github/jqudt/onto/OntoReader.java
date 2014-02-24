@@ -7,23 +7,19 @@ package com.github.jqudt.onto;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.openrdf.repository.Repository;
-import org.openrdf.repository.RepositoryConnection;
-import org.openrdf.repository.RepositoryException;
+import org.openrdf.model.Model;
 import org.openrdf.rio.RDFFormat;
 import org.openrdf.rio.RDFParseException;
+import org.openrdf.rio.Rio;
 
 public class OntoReader {
 
-	protected static void read(Repository repos, String ontology) throws RepositoryException, RDFParseException, IOException {
-		RepositoryConnection con = repos.getConnection();
-
+	protected static void read(Model repos, String ontology)
+			throws RDFParseException, IOException {
 		String filename = "onto/" + ontology;
-        InputStream ins = OntoReader.class.getClassLoader().getResourceAsStream(filename);
-        if (ontology.endsWith(".ttl")) {
-        	con.add(ins, "", RDFFormat.TURTLE);
-        } else {
-        	con.add(ins, "", RDFFormat.RDFXML);
-        }
+		InputStream ins = OntoReader.class.getClassLoader()
+				.getResourceAsStream(filename);
+		repos.addAll(Rio.parse(ins, "",
+				Rio.getParserFormatForFileName(ontology, RDFFormat.RDFXML)));
 	}
 }

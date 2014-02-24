@@ -8,18 +8,15 @@ import java.io.IOException;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.openrdf.repository.Repository;
-import org.openrdf.repository.RepositoryException;
-import org.openrdf.repository.sail.SailRepository;
+import org.openrdf.model.Model;
+import org.openrdf.model.impl.LinkedHashModel;
 import org.openrdf.rio.RDFParseException;
-import org.openrdf.sail.memory.MemoryStore;
 
 public class OntoReaderTest {
 
 	@Test
-	public void testUnitOntology() throws RepositoryException, RDFParseException, IOException {
-		Repository repos = new SailRepository(new MemoryStore());
-		repos.initialize();
+	public void testUnitOntology() throws RDFParseException, IOException {
+		Model repos = new LinkedHashModel();
 		OntoReader.read(repos, "unit");
 		Assert.assertNotNull(repos);
 	}
