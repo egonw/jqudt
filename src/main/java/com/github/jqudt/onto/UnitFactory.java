@@ -68,10 +68,11 @@ public class UnitFactory {
 		Multiplier multiplier = new Multiplier();
 
 		try {
-			if (repos.isEmpty())
+			Model statements = repos.filter(uri, null, null);
+			if (statements.isEmpty())
 				throw new IllegalStateException("No ontology entry found for: " + resource.toString());
 
-			for (Statement statement : repos) {
+			for (Statement statement : statements) {
 				if (statement.getPredicate().equals(QUDT.SYMBOL)) {
 					unit.setSymbol(statement.getObject().stringValue());
 				} else if (statement.getPredicate().equals(QUDT.ABBREVIATION)) {
