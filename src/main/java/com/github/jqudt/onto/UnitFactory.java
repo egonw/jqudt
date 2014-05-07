@@ -10,30 +10,27 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import org.openrdf.model.Model;
 import org.openrdf.model.Statement;
 import org.openrdf.model.ValueFactory;
+import org.openrdf.model.impl.LinkedHashModel;
+import org.openrdf.model.impl.ValueFactoryImpl;
 import org.openrdf.model.vocabulary.RDF;
 import org.openrdf.model.vocabulary.RDFS;
 import org.openrdf.model.vocabulary.XMLSchema;
-import org.openrdf.repository.Repository;
-import org.openrdf.repository.RepositoryConnection;
-import org.openrdf.repository.RepositoryException;
-import org.openrdf.repository.sail.SailRepository;
-import org.openrdf.sail.memory.MemoryStore;
 
 import com.github.jqudt.Multiplier;
 import com.github.jqudt.Unit;
 
 public class UnitFactory {
 	
-	private Repository repos;
+	private Model repos;
 
 	private static UnitFactory factory = null;
 
 	private UnitFactory() {
-		repos = new SailRepository(new MemoryStore());
+		repos = new LinkedHashModel();
 		try {
-			repos.initialize();
 			OntoReader.read(repos, "unit");
 			OntoReader.read(repos, "qudt");
 			OntoReader.read(repos, "quantity");
@@ -63,7 +60,7 @@ public class UnitFactory {
 	public Unit getUnit(URI resource) {
 		if (resource == null) throw new IllegalArgumentException("The URI cannot be null");
 
-		ValueFactory f = repos.getValueFactory();
+		ValueFactory f = ValueFactoryImpl.getInstance();
 		org.openrdf.model.URI uri = f.createURI(resource.toString());
 		
 		Unit unit = new Unit();
@@ -71,9 +68,8 @@ public class UnitFactory {
 		Multiplier multiplier = new Multiplier();
 
 		try {
-			RepositoryConnection con = repos.getConnection();
-			List<Statement> statements = con.getStatements(uri, null, null, true).asList();
-			if (statements.size() == 0)
+			Model statements = repos.filter(uri, null, null);
+			if (statements.isEmpty())
 				throw new IllegalStateException("No ontology entry found for: " + resource.toString());
 
 			for (Statement statement : statements) {
@@ -110,30 +106,22 @@ public class UnitFactory {
 	public List<Unit> findUnits(String symbol) {
 		if (symbol == null) throw new IllegalArgumentException("The symbol cannot be null");
 
-		ValueFactory f = repos.getValueFactory();
-		try {
-			RepositoryConnection con = repos.getConnection();
-			List<Statement> statements = con.getStatements(
-				null, QUDT.ABBREVIATION, f.createLiteral(symbol, XMLSchema.STRING), true
-			).asList();
-			if (statements.size() == 0) return Collections.emptyList();
-			List<Unit> foundUnits = new ArrayList<Unit>();
-			for (Statement statement : statements) {
-				Object type = statement.getSubject();
-				try {
-					if (type instanceof org.openrdf.model.URI) {
-						org.openrdf.model.URI typeURI = (org.openrdf.model.URI)type;
-						foundUnits.add(getUnit(typeURI.toString()));
-					}
-				} catch (Exception exception) {
-					// ignore
+		ValueFactory f = ValueFactoryImpl.getInstance();
+		Model statements = repos.filter(null, QUDT.ABBREVIATION, f.createLiteral(symbol, XMLSchema.STRING));
+		if (statements.isEmpty()) return Collections.emptyList();
+		List<Unit> foundUnits = new ArrayList<Unit>();
+		for (Statement statement : statements) {
+			Object type = statement.getSubject();
+			try {
+				if (type instanceof org.openrdf.model.URI) {
+					org.openrdf.model.URI typeURI = (org.openrdf.model.URI)type;
+					foundUnits.add(getUnit(typeURI.toString()));
 				}
+			} catch (Exception exception) {
+				// ignore
 			}
-			return foundUnits;
-		} catch (RepositoryException e) {
-			e.printStackTrace();
 		}
-		return Collections.emptyList();
+		return foundUnits;
 	}
 
 	public List<String> getURIs(String type) {
@@ -149,13 +137,12 @@ public class UnitFactory {
 	public List<String> getURIs(URI type) {
 		if (type == null) throw new IllegalArgumentException("The type cannot be null");
 
-		ValueFactory f = repos.getValueFactory();
+		ValueFactory f = ValueFactoryImpl.getInstance();
 		org.openrdf.model.URI uri = f.createURI(type.toString());
 		
 		try {
-			RepositoryConnection con = repos.getConnection();
-			List<Statement> statements = con.getStatements(null, null, uri, true).asList();
-			if (statements.size() == 0)
+			Model statements = repos.filter(null, null, uri);
+			if (statements.isEmpty())
 				return Collections.emptyList();
 
 			List<String> units = new ArrayList<String>();
