@@ -24,6 +24,10 @@
       <organization>Maastricht University</organization>
       <organizationUrl>http://egonw.github.com/</organizationUrl>
     </developer>
+    <developer>
+      <name>Peter Ansell</name>
+      <email>p_ansell@yahoo.com</email>
+    </developer>
   </developers>
 
   <properties>
