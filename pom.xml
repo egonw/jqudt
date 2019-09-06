@@ -4,7 +4,7 @@
 	
   <groupId>com.github.egonw</groupId>
   <artifactId>jqudt</artifactId>
-  <version>1.3.0-SNAPSHOT</version>
+  <version>1.3.0</version>
   <packaging>jar</packaging>
   <name>jQUDT</name>
   <description>Java library for the QUDT ontology</description>
