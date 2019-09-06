@@ -88,4 +88,12 @@
     </plugins>
   </build>
 
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub egonw Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/egonw/jqudt</url>
+    </repository>
+  </distributionManagement>
+
 </project>
