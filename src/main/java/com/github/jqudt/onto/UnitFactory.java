@@ -31,7 +31,7 @@ public class UnitFactory {
 	private UnitFactory() {
 		repos = new LinkedHashModel();
 		String[] ontologies = {
-			"unit", "qudt", "quantity", "ops.ttl"
+			"unit", "qudt", "quantity", "ops"
 		};
 		for (String ontology : ontologies) {
 			try {
