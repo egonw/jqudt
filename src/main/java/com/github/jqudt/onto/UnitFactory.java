@@ -1,4 +1,4 @@
-/* Copyright (C) 2012  Egon Willighagen <egonw@users.sf.net>
+/* Copyright (C) 2012,2019  Egon Willighagen <egonw@users.sf.net>
  *
  * License: new BSD
  */
@@ -30,15 +30,17 @@ public class UnitFactory {
 
 	private UnitFactory() {
 		repos = new LinkedHashModel();
-		try {
-			OntoReader.read(repos, "unit");
-			OntoReader.read(repos, "qudt");
-			OntoReader.read(repos, "quantity");
-			OntoReader.read(repos, "ops.ttl");
-		} catch (Exception exception) {
-			throw new IllegalStateException(
-				"Could not load the QUDT ontologies: " + exception.getMessage(), exception
-			);
+		String[] ontologies = {
+			"unit", "qudt", "quantity", "ops.ttl"
+		};
+		for (String ontology : ontologies) {
+			try {
+				OntoReader.read(repos, ontology);
+			} catch (Exception exception) {
+				throw new IllegalStateException(
+					"Could not load the QUDT ontology '" + ontology + "': " + exception.getMessage(), exception
+				);
+			}
 		}
 	}
 
