@@ -37,9 +37,9 @@
   </properties>
 
   <scm>
-    <connection>scm:git:git@github.com:egonw/jqudt.git</connection>
-    <developerConnection>scm:git:git@github.com:egonw/jqudt.git</developerConnection>
-    <url>http://github.com/egonw/jqudt/tree/master</url>
+    <connection>scm:git:https://github.com/egonw/jqudt.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/egonw/jqudt.git</developerConnection>
+    <url>http://github.com/egonw/jqudt</url>
   </scm>
 
   <dependencies>
