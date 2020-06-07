@@ -27,14 +27,17 @@ same unit type, qudt:MolarConcentrationUnit and qudt:TemperatureUnit respectivel
 
 Source:
 
-    Quantity obs = new Quantity(0.1, Micromolar.getInstance());
-    System.out.println(obs + " = " +  obs.convertTo(Nanomolar.getInstance()));
-    
-    Quantity temp = new Quantity(20, TemperatureUnit.CELSIUS);
-    System.out.println(temp + " = " +  temp.convertTo(TemperatureUnit.KELVIN));
+```java
+Quantity obs = new Quantity(0.1, ConcentrationUnit.MICROMOLAR);
+System.out.println(obs + " = " +  obs.convertTo(ConcentrationUnit.NANOMOLAR));
+
+Quantity temp = new Quantity(20, TemperatureUnit.CELSIUS);
+System.out.println(temp + " = " +  temp.convertTo(TemperatureUnit.KELVIN));
+```
 
 Output
 
-    0.1 μM = 100.00000000000001 nM
-    20.0 C = 293.0 K
-
+```
+0.1 μM = 100.00000000000001 nM
+20.0 C = 293.0 K
+```
