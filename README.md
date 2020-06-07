@@ -15,10 +15,24 @@ QUDT is a CC-SA-BY project by NASA Ames Research Center and TopQuadrant, Inc.
 
 License of this Java library: new BSD
 
-Status
-======
+Installation
+============
 
-The status of this library is alpha.
+Maven:
+
+```xml
+<dependency>
+  <groupId>com.github.egonw</groupId>
+  <artifactId>jqudt</artifactId>
+  <version>1.4.0</version>
+</dependency>
+```
+
+Groovy:
+
+```groovy
+@Grab(group='com.github.egonw', module='jqudt', version='1.4.0')
+```
 
 Quick demo
 ==========
