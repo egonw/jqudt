@@ -1,4 +1,6 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3883588.svg)](https://doi.org/10.5281/zenodo.3883588)
 [![Build Status](https://travis-ci.org/egonw/jqudt.svg?branch=master)](https://travis-ci.org/egonw/jqudt)
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.egonw/jqudt.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.github.egonw%22%20AND%20a:%22jqudt%22)
 
 Introduction
 ============
