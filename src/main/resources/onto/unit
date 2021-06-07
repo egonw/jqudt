@@ -25,7 +25,7 @@
     xmlns:dimension="http://qudt.org/schema/dimension#"
     xmlns:xhtml="http://topbraid.org/xhtml#"
     xmlns:spl="http://spinrdf.org/spl#"
-    xmlns:unit="http://qudt.org/vocab/unit#"
+    xmlns:unit="http://qudt.org/vocab/unit/"
     xmlns:sxml="http://topbraid.org/sxml#"
     xmlns:qudt-cat="http://qudt.org/catalog/qudt#"
     xmlns:fn="http://www.w3.org/2005/xpath-functions#"
@@ -55,6 +55,11 @@
     xmlns:creativecommons="http://creativecommons.org/ns#"
     xmlns:spr="http://spinrdf.org/spr#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:qkdv="http://qudt.org/vocab/dimensionvector/"
+    xmlns:quantitykind="http://qudt.org/vocab/quantitykind/"
+    xmlns:sou="http://qudt.org/vocab/sou/"
   xml:base="http://qudt.org/vocab/unit" > 
   <rdf:Description rdf:about="#Quad">
     <skos:exactMatch rdf:resource="http://dbpedia.org/resource/Quad"/>
