@@ -11,6 +11,12 @@ public class VolumeUnit {
 
 	private VolumeUnit() {};
 
+	public static Unit CUBIC_MILLI_METER = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/MilliM3");
+	public static Unit CUBIC_CENTI_METER = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/CentiM3");
+	public static Unit CUBIC_METER = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/M3");
+	public static Unit CUBIC_DECA_METER = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/DecaM3");
+
+	// liter
 	public static Unit HECTOLITER = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/HectoL");
 	public static Unit LITER = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/L");
 	public static Unit MICROLITER = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/MicroL");
