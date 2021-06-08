@@ -4,6 +4,7 @@
  */
 package com.github.jqudt.units;
 
+import com.github.jqudt.Unit;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -16,6 +17,13 @@ public class LengthTests {
 	public void testNanometer() throws IllegalArgumentException, IllegalAccessException {
 		Quantity temp = new Quantity(23.5, LengthUnit.NM);
 		Assert.assertEquals("nm", temp.getUnit().getAbbreviation());
+	}
+
+	@Test
+	public void testCentimeter() throws IllegalAccessException {
+		Quantity centim = new Quantity(1, LengthUnit.CM);
+		Assert.assertEquals("cm", centim.getUnit().getSymbol());
+		Assert.assertEquals(0.01, centim.convertTo(LengthUnit.M).getValue(), 0);
 	}
 
 }
