@@ -11,7 +11,7 @@ public class ConcentrationUnit {
 
 	private ConcentrationUnit() {};
 
-	public static Unit MOLE_PER_CUBIC_METER = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit#MolePerCubicMeter");
+	public static Unit MOLE_PER_CUBIC_METER = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/MOL-PER-M3");
 
 	public static Unit MOLAR = UnitFactory.getInstance().getUnit("http://www.openphacts.org/units/Molar");
 	public static Unit MILLIMOLAR = UnitFactory.getInstance().getUnit("http://www.openphacts.org/units/Millimolar");
