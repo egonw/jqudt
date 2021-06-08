@@ -92,6 +92,4 @@ public class MechanicUnit {
     public static Unit KILO_GRAM_PER_MINUTE = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/KiloGM-PER-MIN");
     public static Unit KILO_GRAM_PER_HOUR = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/KiloGM-PER-HR");
     public static Unit KILO_GRAM_PER_DAY = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/KiloGM-PER-DAY");
-
-    // https://de.wikipedia.org/wiki/Liste_physikalischer_Gr%C3%B6%C3%9Fen
 }

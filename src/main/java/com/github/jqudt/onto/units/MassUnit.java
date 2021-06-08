@@ -12,12 +12,12 @@ public class MassUnit {
 	private MassUnit() {};
 
 	public static Unit TONNE = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/TONNE");
-	public static Unit KILOGRAM = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/KiloGM");
+	public static Unit KILO_GRAM = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/KiloGM");
 	public static Unit GRAM = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/GM");
-	public static Unit MILLIGRAM = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/MilliGM");
-	public static Unit MICROGRAM = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/MicroGM");
-	public static Unit NANOGRAM = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/NanoGM");
-	public static Unit PICOGRAM = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/PicoGM");
-	public static Unit FEMTOGRAM = UnitFactory.getInstance().getUnit("http://www.openphacts.org/units/Femtogram");
+	public static Unit MILLI_GRAM = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/MilliGM");
+	public static Unit MICRO_GRAM = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/MicroGM");
+	public static Unit NANO_GRAM = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/NanoGM");
+	public static Unit PICO_GRAM = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/PicoGM");
+	public static Unit FEMTO_GRAM = UnitFactory.getInstance().getUnit("http://www.openphacts.org/units/Femtogram");
 
 }

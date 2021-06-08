@@ -11,6 +11,6 @@ public class CountingUnit {
 
 	private CountingUnit() {};
 
-	public static Unit PERCENT = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit#Percent");
+	public static Unit PERCENT = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/PERCENT");
 
 }

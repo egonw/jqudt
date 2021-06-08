@@ -11,15 +11,15 @@ public class LengthUnit {
 
 	private LengthUnit() {};
 
-	public static Unit NM = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/NanoM");
+	public static Unit NANO_METER = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/NanoM");
 
-	public static Unit MM = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/MilliM");
+	public static Unit MILLI_METER = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/MilliM");
 
-	public static Unit CM = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/CentiM");
+	public static Unit CENTI_METER = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/CentiM");
 
-	public static Unit DM = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/DeciM");
+	public static Unit DECI_METER = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/DeciM");
 
-	public static Unit M = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/M");
+	public static Unit METER = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/M");
 
-	public static Unit KM = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/KiloM");
+	public static Unit KILO_METER = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/KiloM");
 }
