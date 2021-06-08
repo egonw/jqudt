@@ -6,7 +6,7 @@
     xmlns:letrs="http://uispin.org/letrs#"
     xmlns:lm-cat-1.2="http://www.linkedmodel.org/1.2/catalog/lm#"
     xmlns:arg="http://spinrdf.org/arg#"
-    xmlns:qudt-1.1="http://qudt.org/1.1/schema/qudt#"
+    xmlns:qudt-1.1="http://qudt.org/1.1/schema/qudt/"
     xmlns:omv="http://omv.ontoware.org/2005/05/ontology#"
     xmlns:qudt-unit-1.1="http://qudt.org/1.1/vocab/unit#"
     xmlns:qudt-quantity-1.1="http://qudt.org/1.1/vocab/quantity#"
@@ -27,7 +27,7 @@
     xmlns:spl="http://spinrdf.org/spl#"
     xmlns:unit="http://qudt.org/vocab/unit#"
     xmlns:sxml="http://topbraid.org/sxml#"
-    xmlns:qudt-cat="http://qudt.org/catalog/qudt#"
+    xmlns:qudt-cat="http://qudt.org/catalog/qudt/"
     xmlns:fn="http://www.w3.org/2005/xpath-functions#"
     xmlns:vaem-1.2="http://www.linkedmodel.org/1.2/schema/vaem#"
     xmlns:voag="http://voag.linkedmodel.org/schema/voag#"
@@ -35,9 +35,9 @@
     xmlns:dimension-1.1="http://qudt.org/1.1/schema/dimension#"
     xmlns:spin="http://spinrdf.org/spin#"
     xmlns:foaf="http://xmlns.com/foaf/0.1/"
-    xmlns:qudt="http://qudt.org/schema/qudt#"
+    xmlns:qudt="http://qudt.org/schema/qudt/"
     xmlns:smf="http://topbraid.org/sparqlmotionfunctions#"
-    xmlns:qudt-cat-11="http://qudt.org/1.1/catalog/qudt#"
+    xmlns:qudt-cat-11="http://qudt.org/1.1/catalog/qudt/"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:composite="http://www.topbraid.org/2007/05/composite.owl#"
     xmlns:qudt-dimensionalunit-1.1="http://qudt.org/1.1/vocab/dimensionalunit#"
@@ -57,15 +57,15 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://qudt.org/schema/quantity" > 
   <rdf:Description rdf:nodeID="A0">
-    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#quantityKind"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/quantityKind"/>
     <owl:hasValue rdf:resource="http://qudt.org/vocab/quantity#EnergyDensity"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://qudt.org/schema/qudt#MechanicsQuantityKind">
+  <rdf:Description rdf:about="http://qudt.org/schema/qudt/MechanicsQuantityKind">
     <skos:exactMatch rdf:resource="http://dbpedia.org/resource/Mechanics"/>
-    <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#QuantityKind"/>
+    <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mechanics Quantity Kind</rdfs:label>
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#QuantityKindCategory"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKindCategory"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="">
@@ -79,10 +79,10 @@
     <dc:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quantities, Units, and Dimensions</dc:subject>
     <vaem:usesNonImportedResource rdf:resource="http://purl.org/dc/elements/1.1/description"/>
     <voag:withAttributionTo rdf:resource="http://voag.linkedmodel.org/schema/voag#TopQuadrantAttribution"/>
-    <voag:withAttributionTo rdf:resource="http://qudt.org/schema/qudt#NASA-ARC-Attribution"/>
+    <voag:withAttributionTo rdf:resource="http://qudt.org/schema/qudt/NASA-ARC-Attribution"/>
     <vaem:usesNonImportedResource rdf:resource="http://purl.org/dc/elements/1.1/subject"/>
     <vaem:usesNonImportedResource rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-    <vaem:hasCatalogEntry rdf:resource="http://qudt.org/catalog/qudt#QUDT-QUANTITY-SchemaCatalogEntry"/>
+    <vaem:hasCatalogEntry rdf:resource="http://qudt.org/catalog/qudt/QUDT-QUANTITY-SchemaCatalogEntry"/>
     <vaem:usesNonImportedResource rdf:resource="http://purl.org/dc/elements/1.1/title"/>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$Id: OSG_quantity-(v1.1).ttl 4988 2011-06-01 20:34:19Z RalphHodgson $</owl:versionInfo>
     <vaem:hasAspectScope rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Basic treatment of quantities and units. No dimensional treatment in this graph.</vaem:hasAspectScope>
@@ -113,179 +113,179 @@
     <owl:imports rdf:resource="http://qudt.org/schema/qudt"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A1">
-    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#quantityKind"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/quantityKind"/>
     <owl:hasValue rdf:resource="http://qudt.org/vocab/quantity#Turbidity"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://qudt.org/schema/qudt#MolalConcentrationUnit">
+  <rdf:Description rdf:about="http://qudt.org/schema/qudt/MolalConcentrationUnit">
     <rdfs:subClassOf rdf:nodeID="A2"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://qudt.org/schema/qudt#ContinuumMechanicsQuantityKind">
-    <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#MechanicsQuantityKind"/>
+  <rdf:Description rdf:about="http://qudt.org/schema/qudt/ContinuumMechanicsQuantityKind">
+    <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/MechanicsQuantityKind"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Continuum Mechanics Quantity Kind</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://qudt.org/schema/qudt#AreaTimeTemperatureUnit">
+  <rdf:Description rdf:about="http://qudt.org/schema/qudt/AreaTimeTemperatureUnit">
     <rdfs:subClassOf rdf:nodeID="A3"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://qudt.org/schema/qudt#RadiologyQuantityKind">
+  <rdf:Description rdf:about="http://qudt.org/schema/qudt/RadiologyQuantityKind">
     <skos:exactMatch rdf:resource="http://dbpedia.org/resource/Radiology"/>
-    <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#QuantityKind"/>
+    <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiology</rdfs:label>
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#QuantityKindCategory"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKindCategory"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A4">
-    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#quantityKind"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/quantityKind"/>
     <owl:hasValue rdf:resource="http://qudt.org/vocab/quantity#ElectricChargeLineDensity"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A5">
-    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#quantityKind"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/quantityKind"/>
     <owl:hasValue rdf:resource="http://qudt.org/vocab/quantity#ThermalInsulance"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A6">
-    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#quantityKind"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/quantityKind"/>
     <owl:hasValue rdf:resource="http://qudt.org/vocab/quantity#ForcePerElectricCharge"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A7">
-    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#quantityKind"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/quantityKind"/>
     <owl:hasValue rdf:resource="http://qudt.org/vocab/quantity#AtomicCharge"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A8">
-    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#unitSystem"/>
-    <owl:allValuesFrom rdf:resource="http://qudt.org/schema/qudt#SystemOfUnits"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/unitSystem"/>
+    <owl:allValuesFrom rdf:resource="http://qudt.org/schema/qudt/SystemOfUnits"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://qudt.org/schema/qudt#ElectricChargeLineDensityUnit">
+  <rdf:Description rdf:about="http://qudt.org/schema/qudt/ElectricChargeLineDensityUnit">
     <rdfs:subClassOf rdf:nodeID="A4"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://qudt.org/schema/qudt#RespiratoryRateUnit">
+  <rdf:Description rdf:about="http://qudt.org/schema/qudt/RespiratoryRateUnit">
     <rdfs:subClassOf rdf:nodeID="A9"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://qudt.org/schema/qudt#ElectricityAndMagnetismQuantityKind">
-    <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#QuantityKind"/>
+  <rdf:Description rdf:about="http://qudt.org/schema/qudt/ElectricityAndMagnetismQuantityKind">
+    <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electricity and Magnetism</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#QuantityKindCategory"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKindCategory"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A10">
-    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#quantityKind"/>
-    <owl:allValuesFrom rdf:resource="http://qudt.org/schema/qudt#ChemistryQuantityKind"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/quantityKind"/>
+    <owl:allValuesFrom rdf:resource="http://qudt.org/schema/qudt/ChemistryQuantityKind"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A11">
-    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#element"/>
-    <owl:allValuesFrom rdf:resource="http://qudt.org/schema/qudt#Unit"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/element"/>
+    <owl:allValuesFrom rdf:resource="http://qudt.org/schema/qudt/Unit"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://qudt.org/schema/qudt#CurvatureUnit">
+  <rdf:Description rdf:about="http://qudt.org/schema/qudt/CurvatureUnit">
     <rdfs:subClassOf rdf:nodeID="A12"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A13">
-    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#quantityKind"/>
-    <owl:allValuesFrom rdf:resource="http://qudt.org/schema/qudt#RadiologyQuantityKind"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/quantityKind"/>
+    <owl:allValuesFrom rdf:resource="http://qudt.org/schema/qudt/RadiologyQuantityKind"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://qudt.org/schema/qudt#LengthUnit">
+  <rdf:Description rdf:about="http://qudt.org/schema/qudt/LengthUnit">
     <rdfs:subClassOf rdf:nodeID="A14"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://qudt.org/schema/qudt#PowerPerAreaUnit">
+  <rdf:Description rdf:about="http://qudt.org/schema/qudt/PowerPerAreaUnit">
     <rdfs:subClassOf rdf:nodeID="A15"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A16">
-    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#quantityKind"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/quantityKind"/>
     <owl:hasValue rdf:resource="http://qudt.org/vocab/quantity#MagneticFlux"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A17">
-    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#quantityKind"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/quantityKind"/>
     <owl:hasValue rdf:resource="http://qudt.org/vocab/quantity#EnergyAndWork"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://qudt.org/schema/qudt#VolumeThermalExpansionUnit">
+  <rdf:Description rdf:about="http://qudt.org/schema/qudt/VolumeThermalExpansionUnit">
     <rdfs:subClassOf rdf:nodeID="A18"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://qudt.org/schema/qudt#Unit">
+  <rdf:Description rdf:about="http://qudt.org/schema/qudt/Unit">
     <rdfs:subClassOf rdf:nodeID="A19"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A20">
-    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#quantityKind"/>
-    <owl:allValuesFrom rdf:resource="http://qudt.org/schema/qudt#AtomicPhysicsQuantityKind"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/quantityKind"/>
+    <owl:allValuesFrom rdf:resource="http://qudt.org/schema/qudt/AtomicPhysicsQuantityKind"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://qudt.org/schema/qudt#MagnetomotiveForceUnit">
+  <rdf:Description rdf:about="http://qudt.org/schema/qudt/MagnetomotiveForceUnit">
     <rdfs:subClassOf rdf:nodeID="A21"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A22">
-    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#quantityKind"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/quantityKind"/>
     <owl:hasValue rdf:resource="http://qudt.org/vocab/quantity#ForcePerLength"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A23">
-    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#quantityKind"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/quantityKind"/>
     <owl:hasValue rdf:resource="http://qudt.org/vocab/quantity#LengthTemperatureTime"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A24">
-    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#baseDimensionEnumeration"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/baseDimensionEnumeration"/>
     <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:maxCardinality>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://qudt.org/schema/qudt#EnergyAndWorkPerMassAmountOfSubstance">
+  <rdf:Description rdf:about="http://qudt.org/schema/qudt/EnergyAndWorkPerMassAmountOfSubstance">
     <rdfs:subClassOf rdf:nodeID="A25"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://qudt.org/schema/qudt#RadianceUnit">
+  <rdf:Description rdf:about="http://qudt.org/schema/qudt/RadianceUnit">
     <rdfs:subClassOf rdf:nodeID="A26"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://qudt.org/schema/qudt#BiologyQuantityKind">
-    <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#QuantityKind"/>
+  <rdf:Description rdf:about="http://qudt.org/schema/qudt/BiologyQuantityKind">
+    <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biology</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#QuantityKindCategory"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKindCategory"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://qudt.org/schema/qudt#AngularMassUnit">
+  <rdf:Description rdf:about="http://qudt.org/schema/qudt/AngularMassUnit">
     <rdfs:subClassOf rdf:nodeID="A27"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A28">
-    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#elementKind"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/elementKind"/>
     <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A29">
-    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#quantityKind"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/quantityKind"/>
     <owl:hasValue rdf:resource="http://qudt.org/vocab/quantity#CoefficientOfHeatTransfer"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A30">
-    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#quantityKind"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/quantityKind"/>
     <owl:hasValue rdf:resource="http://qudt.org/vocab/quantity#Permeability"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://qudt.org/schema/qudt#ThermalEnergyUnit">
+  <rdf:Description rdf:about="http://qudt.org/schema/qudt/ThermalEnergyUnit">
     <rdfs:subClassOf rdf:nodeID="A31"/>
     <rdfs:subClassOf rdf:nodeID="A32"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A33">
-    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#quantityKind"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/quantityKind"/>
     <owl:hasValue rdf:resource="http://qudt.org/vocab/quantity#RadiantIntensity"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A34">
-    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#quantityKind"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/quantityKind"/>
     <owl:hasValue rdf:resource="http://qudt.org/vocab/quantity#MagneticField"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A35">
-    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#quantityKind"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/quantityKind"/>
     <owl:hasValue rdf:resource="http://qudt.org/vocab/quantity#Time"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A36">
-    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#quantityKind"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt/quantityKind"/>
     <owl:hasValue rdf:resource="http://qudt.org/vocab/quantity#LinearMomentum"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
