@@ -16,8 +16,8 @@ public class TimeUnitTest {
 	@Test
 	public void test() throws IllegalArgumentException, IllegalAccessException {
 		UnitFactory factory = UnitFactory.getInstance();
-		Unit hour = factory.getUnit("http://qudt.org/vocab/unit#Hour");
-		Unit second = factory.getUnit("http://qudt.org/vocab/unit#SecondTime");
+		Unit hour = factory.getUnit("http://qudt.org/vocab/unit/HR");
+		Unit second = factory.getUnit("http://qudt.org/vocab/unit/SEC");
 		Quantity obs = new Quantity(1, hour);
 		Quantity obs2 =  obs.convertTo(second);
 		Assert.assertEquals(second, obs2.getUnit());

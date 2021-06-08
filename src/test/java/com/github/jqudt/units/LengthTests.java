@@ -16,7 +16,7 @@ public class LengthTests {
 	@Test
 	public void testNanometer() throws IllegalArgumentException, IllegalAccessException {
 		Quantity temp = new Quantity(23.5, LengthUnit.NM);
-		Assert.assertEquals("nm", temp.getUnit().getAbbreviation());
+		Assert.assertEquals("nm", temp.getUnit().getSymbol());
 	}
 
 	@Test
