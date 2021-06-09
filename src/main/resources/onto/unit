@@ -4099,7 +4099,7 @@ m C}\\)</qudt:latexDefinition>
     <dc:description rdf:datatype="http://qudt.org/schema/qudt/LatexString">\\(\	extbf{Degree Fahrenheit} is an Imperial unit for 'Thermodynamic Temperature' expressed as \\(\\,^{\\circ}{\
 m F}\\)</dc:description>
     <qudt:conversionMultiplier rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5555555555555556</qudt:conversionMultiplier>
-    <qudt:conversionOffset rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">255.37037037037037037E0</qudt:conversionOffset>
+    <qudt:conversionOffset rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">459.669607</qudt:conversionOffset>
     <qudt:definedUnitOfSystem rdf:resource="http://qudt.org/vocab/sou/IMPERIAL"/>
     <qudt:definedUnitOfSystem rdf:resource="http://qudt.org/vocab/sou/USCS"/>
     <qudt:expression rdf:datatype="http://qudt.org/schema/qudt/LatexString">\\(degF\\)</qudt:expression>
