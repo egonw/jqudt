@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ops="http://www.openphacts.org/units/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:quantity="http://qudt.org/schema/quantity#" xmlns:qudt="http://qudt.org/schema/qudt#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ops="http://www.openphacts.org/units/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:quantity="http://qudt.org/schema/quantity#" xmlns:qudt="http://qudt.org/schema/qudt/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
   <rdf:Description rdf:about="http://www.openphacts.org/units/Molar">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#MolarConcentrationUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/Unit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Molar">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Molar">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Molar</rdfs:label>
@@ -25,10 +25,10 @@
     <skos:exactMatch rdf:resource="http://dbpedia.org/resource/Molar_concentration"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Millimolar">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#MolarConcentrationUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/Unit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Millimolar">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Millimolar">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Millimolar</rdfs:label>
@@ -46,10 +46,10 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mmol/dm^3</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Micromolar">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#MolarConcentrationUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/Unit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Micromolar">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Micromolar">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Micromolar</rdfs:label>
@@ -67,10 +67,10 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">μmol/dm^3</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Nanomolar">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#MolarConcentrationUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/Unit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Nanomolar">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Nanomolar">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nanomolar</rdfs:label>
@@ -88,10 +88,10 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nmol/dm^3</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Picomolar">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#MolarConcentrationUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/Unit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Picomolar">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Picomolar">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Picomolar</rdfs:label>
@@ -109,10 +109,10 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmol/dm^3</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Femtomolar">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#MolarConcentrationUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/Unit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Femtomolar">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Femtomolar">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femtomolar</rdfs:label>
@@ -130,13 +130,13 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fmol/dm^3</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/GramPerLiter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#MassPerVolumeUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/MassPerVolumeUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/GramPerLiter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/GramPerLiter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#DerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/DerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/GramPerLiter">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gram per Liter</rdfs:label>
@@ -154,13 +154,13 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">g/dm^3</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/GramPerMilliliter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#MassPerVolumeUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/MassPerVolumeUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/GramPerMilliliter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/GramPerMilliliter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#DerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/DerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/GramPerMilliliter">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gram per Milliliter</rdfs:label>
@@ -178,13 +178,13 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">g/cm^3</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/MilligramPerMilliliter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#MassPerVolumeUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/MassPerVolumeUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/MilligramPerMilliliter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/MilligramPerMilliliter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#DerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/DerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/MilligramPerMilliliter">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milligram per Milliliter</rdfs:label>
@@ -202,13 +202,13 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg/cm^3</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/MicrogramPerMilliliter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#MassPerVolumeUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/MassPerVolumeUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/MicrogramPerMilliliter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/MicrogramPerMilliliter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#DerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/DerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/MicrogramPerMilliliter">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microgram per Milliliter</rdfs:label>
@@ -226,13 +226,13 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">μg/cm^3</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/NanogramPerMilliliter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#MassPerVolumeUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/MassPerVolumeUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/NanogramPerMilliliter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/NanogramPerMilliliter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#DerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/DerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/NanogramPerMilliliter">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nanogram per Milliliter</rdfs:label>
@@ -250,13 +250,13 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ng/cm^3</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/PicogramPerMilliliter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#MassPerVolumeUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/MassPerVolumeUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/PicogramPerMilliliter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/PicogramPerMilliliter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#DerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/DerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/PicogramPerMilliliter">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Picogram per Milliliter</rdfs:label>
@@ -274,13 +274,13 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pg/cm^3</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/MilligramPerDeciliter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#MassPerVolumeUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/MassPerVolumeUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/MilligramPerDeciliter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/MilligramPerDeciliter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#DerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/DerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/MilligramPerDeciliter">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milligram per Deciliter</rdfs:label>
@@ -295,13 +295,13 @@
     <qudt:conversionOffset rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</qudt:conversionOffset>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Nanometer">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#LengthUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/LengthUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Nanometer">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Nanometer">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#DerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/DerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Nanometer">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nanometer</rdfs:label>
@@ -316,10 +316,10 @@
     <qudt:conversionOffset rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</qudt:conversionOffset>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/SquareAngstrom">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#AreaUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/AreaUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/SquareAngstrom">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/SquareAngstrom">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Square Ångström</rdfs:label>
@@ -337,10 +337,10 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Å^2</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Milligram">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#MassUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/MassUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Milligram">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Milligram">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milligram</rdfs:label>
@@ -358,10 +358,10 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Microgram">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#MassUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/MassUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Microgram">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Microgram">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microgram</rdfs:label>
@@ -379,10 +379,10 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">μg</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Nanogram">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#MassUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/MassUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Nanogram">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Nanogram">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nanogram</rdfs:label>
@@ -400,10 +400,10 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">μg</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Picogram">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#MassUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/MassUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Picogram">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Picogram">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Picogram</rdfs:label>
@@ -421,10 +421,10 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pg</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Femtogram">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#MassUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/MassUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Femtogram">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Femtogram">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femtogram</rdfs:label>
@@ -442,7 +442,7 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fg</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/MilligramPerKilogram">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/MilligramPerKilogram">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milligram per Kilogram</rdfs:label>
@@ -454,10 +454,10 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg/kg</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Millimole">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#AmountOfSubstanceUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/AmountOfSubstanceUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Millimole">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Millimole">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Millimole</rdfs:label>
@@ -475,10 +475,10 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mmol</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Micromole">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#AmountOfSubstanceUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/AmountOfSubstanceUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Micromole">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Micromole">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Micromole</rdfs:label>
@@ -496,10 +496,10 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">μmol</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Nanomole">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#AmountOfSubstanceUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/AmountOfSubstanceUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Nanomole">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Nanomole">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nanomole</rdfs:label>
@@ -517,10 +517,10 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nmol</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Picomole">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#AmountOfSubstanceUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/AmountOfSubstanceUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Picomole">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Picomole">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Picomole</rdfs:label>
@@ -538,10 +538,10 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmol</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Femtomole">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#AmountOfSubstanceUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/AmountOfSubstanceUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Femtomole">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Femtomole">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femtomole</rdfs:label>
@@ -559,10 +559,10 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fmol</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Milliliter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#VolumeUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/VolumeUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Milliliter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Milliliter">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milliliter</rdfs:label>
@@ -580,10 +580,10 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mL</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Microliter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#VolumeUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/VolumeUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Microliter">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/Microliter">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microliter</rdfs:label>
@@ -601,7 +601,7 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">μL</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/PartsPerMillion">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#QuantityKind"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/PartsPerMillion">
     <qudt:quantityKind rdf:resource="http://qudt.org/schema/quantity#DimensionlessRatio"/>
@@ -613,10 +613,10 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ppm</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/LiterPerKilogram">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#VolumePerMassUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/VolumePerMassUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/LiterPerKilogram">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/LiterPerKilogram">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">liter per kilogram</rdfs:label>
@@ -634,10 +634,10 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">l/kg</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/MilliliterPerKilogram">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#VolumePerMassUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/VolumePerMassUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/MilliliterPerKilogram">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/MilliliterPerKilogram">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milliliter per kilogram</rdfs:label>
@@ -655,10 +655,10 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ml/kg</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/LiterPerSecond">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#VolumePerTimeUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/VolumePerTimeUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/LiterPerSecond">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/LiterPerSecond">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">liter per second</rdfs:label>
@@ -676,10 +676,10 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L/s</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/LiterPerMinute">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#VolumePerTimeUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/VolumePerTimeUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/LiterPerMinute">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/LiterPerMinute">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">liter per minute</rdfs:label>
@@ -697,10 +697,10 @@
     <qudt:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L/min</qudt:symbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/MicroliterPerMinute">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#VolumePerTimeUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/VolumePerTimeUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/MicroliterPerMinute">
-    <rdf:type rdf:resource="http://qudt.org/schema/qudt#SIDerivedUnit"/>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt/SIDerivedUnit"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.openphacts.org/units/MicroliterPerMinute">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microliter per minute</rdfs:label>

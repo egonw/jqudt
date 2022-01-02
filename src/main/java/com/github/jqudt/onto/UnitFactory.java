@@ -93,6 +93,8 @@ public class UnitFactory {
 							unit.setType(new URI(typeURI.stringValue()));
 						}
 					}
+				} else if (statement.getPredicate().equals(QUDT.IS_DELTA_QUANTITY)) {
+					unit.setDeltaQuantity(Boolean.parseBoolean(statement.getObject().stringValue()));
 				} else {
 					// System.out.println("Ignoring: " + statement);
 				}

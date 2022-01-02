@@ -14,7 +14,7 @@ public class SquareAreaTest {
 
 	@Test
 	public void testMinusTwenty() throws IllegalArgumentException, IllegalAccessException {
-		Quantity area = new Quantity(5, AreaUnit.SQUARE_ANGSTROM);
+		Quantity area = new Quantity(5, AreaUnit.SQUARE_CM);
 		Quantity area2 = area.convertTo(AreaUnit.SQUARE_METER);
 		Assert.assertEquals(0.00000000000000000005, area2.getValue(), 0.01);
 	}

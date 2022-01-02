@@ -13,6 +13,7 @@ public class Unit {
 	private String abbreviation;
 	private String symbol;
 	private URI type;
+	private boolean isDeltaQuantity;
 
 	private Multiplier multiplier;
 
@@ -63,6 +64,10 @@ public class Unit {
 	public void setType(URI type) {
 		this.type = type;
 	}
+
+	public boolean isDeltaQuantity() { return isDeltaQuantity; }
+
+	public void setDeltaQuantity(boolean deltaQuantity) { isDeltaQuantity = deltaQuantity; }
 
 	public String toString() {
 		return (this.getAbbreviation() == null ? "" : this.getAbbreviation());

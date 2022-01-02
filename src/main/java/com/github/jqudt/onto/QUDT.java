@@ -12,7 +12,7 @@ public class QUDT {
 
 	private static ValueFactory factory = new ValueFactoryImpl();
 
-	public final static String namespace = "http://qudt.org/schema/qudt#";
+	public final static String namespace = "http://qudt.org/schema/qudt/";
 
 	private static final URI getURI(String localPart) {
 		return factory.createURI(namespace, localPart);
@@ -29,5 +29,6 @@ public class QUDT {
 	public final static URI DERIVED_UNIT = getURI("DerivedUnit");
 	public final static URI NOT_USED_WITH_SI_UNIT = getURI("NotUsedWithSIUnit");
 	public final static URI USED_WITH_SI_UNIT = getURI("UsedWithSIUnit");
+	public final static URI IS_DELTA_QUANTITY = getURI("isDeltaQuantity");
 
 }

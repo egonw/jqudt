@@ -50,14 +50,21 @@ public class Quantity {
 
 		Quantity newMeasurement = new Quantity();
 		newMeasurement.setUnit(newUnit);
-		newMeasurement.setValue(
-			((value
-			// convert to the base unit
-			* unit.getMultiplier().getMultiplier() + unit.getMultiplier().getOffset())
-			// convert the base unit to the new unit
-			- newUnit.getMultiplier().getOffset()) / newUnit.getMultiplier().getMultiplier() 
-		);
-
+		// conversion of absolute values
+		if(!unit.isDeltaQuantity() && !newUnit.isDeltaQuantity()) {
+			newMeasurement.setValue(((value + unit.getMultiplier().getOffset()) * (unit.getMultiplier().getMultiplier()))
+					/ (newUnit.getMultiplier().getMultiplier()) - newUnit.getMultiplier().getOffset());
+		}
+		// TODO: conversion of interval values
+		else {
+			newMeasurement.setValue(
+					((value
+							// convert to the base unit
+							* unit.getMultiplier().getMultiplier() + unit.getMultiplier().getOffset())
+							// convert the base unit to the new unit
+							- newUnit.getMultiplier().getOffset()) / newUnit.getMultiplier().getMultiplier()
+			);
+		}
 		return newMeasurement;
 	}
 

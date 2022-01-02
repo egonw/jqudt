@@ -14,8 +14,8 @@ public class EnergyTests {
 
 	@Test
 	public void testElectronVolt() throws IllegalArgumentException, IllegalAccessException {
-		Quantity temp = new Quantity(-23.5, EnergyUnit.EV);
-		Assert.assertEquals("eV", temp.getUnit().getAbbreviation());
+		Quantity temp = new Quantity(-23.5, EnergyUnit.ELECTRON_VOLT);
+		Assert.assertEquals("eV", temp.getUnit().getSymbol());
 	}
 
 }

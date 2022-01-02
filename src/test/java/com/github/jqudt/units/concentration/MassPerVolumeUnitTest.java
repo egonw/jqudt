@@ -14,9 +14,9 @@ public class MassPerVolumeUnitTest {
 
 	@Test
 	public void test() throws IllegalArgumentException, IllegalAccessException {
-		Quantity obs = new Quantity(0.1, ConcentrationUnit.MICROGRAM_PER_MILLILITER);
-		Quantity obs2 =  obs.convertTo(ConcentrationUnit.PICOGRAM_PER_MILLILITER);
-		Assert.assertEquals(ConcentrationUnit.PICOGRAM_PER_MILLILITER, obs2.getUnit());
+		Quantity obs = new Quantity(0.1, ConcentrationUnit.MICRO_GRAM_PER_MILLILITER);
+		Quantity obs2 =  obs.convertTo(ConcentrationUnit.PICO_GRAM_PER_MILLILITER);
+		Assert.assertEquals(ConcentrationUnit.PICO_GRAM_PER_MILLILITER, obs2.getUnit());
 		Assert.assertEquals(100000, obs2.getValue(), 1);
 	}
 

@@ -11,6 +11,6 @@ public class EnergyUnit {
 
 	private EnergyUnit() {};
 
-	public static Unit EV = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit#ElectronVolt");
+	public static Unit ELECTRON_VOLT = UnitFactory.getInstance().getUnit("http://qudt.org/vocab/unit/EV");
 
 }

@@ -35,13 +35,13 @@ public class UnitOntologyFactoryTest {
 		Assert.assertEquals("nM", unit.getAbbreviation());
 		Assert.assertEquals(0.000001, unit.getMultiplier().getMultiplier(), 0.0000001);
 		Assert.assertEquals(0, unit.getMultiplier().getOffset(), 0.01);
-		Assert.assertEquals("http://qudt.org/schema/qudt#MolarConcentrationUnit", unit.getType().toString());
+		Assert.assertEquals("http://qudt.org/schema/qudt/Unit", unit.getType().toString());
 	}
 
 	@Test
 	public void testGetUOUnitsByQUDTType() throws Exception {
 		UnitOntologyFactory factory = UnitOntologyFactory.getInstance();
-		List<String> units = factory.getURIs(new URI("http://qudt.org/schema/qudt#MolarConcentrationUnit"));
+		List<String> units = factory.getURIs(new URI("http://qudt.org/schema/qudt/Unit"));
 		Assert.assertNotNull(units);
 		Assert.assertNotSame(0, units.size());
 	}
