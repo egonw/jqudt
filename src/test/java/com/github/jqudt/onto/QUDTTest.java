@@ -8,8 +8,8 @@ import java.io.IOException;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.openrdf.model.URI;
-import org.openrdf.rio.RDFParseException;
+import org.eclipse.rdf4j.model.URI;
+import org.eclipse.rdf4j.rio.RDFParseException;
 
 public class QUDTTest {
 

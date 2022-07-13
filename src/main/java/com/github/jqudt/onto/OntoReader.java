@@ -7,10 +7,10 @@ package com.github.jqudt.onto;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.openrdf.model.Model;
-import org.openrdf.rio.RDFFormat;
-import org.openrdf.rio.RDFParseException;
-import org.openrdf.rio.Rio;
+import org.eclipse.rdf4j.model.Model;
+import org.eclipse.rdf4j.rio.RDFFormat;
+import org.eclipse.rdf4j.rio.RDFParseException;
+import org.eclipse.rdf4j.rio.Rio;
 
 public class OntoReader {
 
@@ -20,11 +20,9 @@ public class OntoReader {
 		InputStream ins = OntoReader.class.getClassLoader()
 				.getResourceAsStream(filename);
 		if (ontology.endsWith(".ttl")) {
-			repos.addAll(Rio.parse(ins, "",
-                                Rio.getParserFormatForFileName(ontology, RDFFormat.TURTLE)));
+			repos.addAll(Rio.parse(ins, "", RDFFormat.TURTLE));
 		} else {
-			repos.addAll(Rio.parse(ins, "",
-				Rio.getParserFormatForFileName(ontology, RDFFormat.RDFXML)));
+			repos.addAll(Rio.parse(ins, "", RDFFormat.RDFXML));
 		}
 	}
 }

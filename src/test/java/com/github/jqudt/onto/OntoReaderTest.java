@@ -8,9 +8,9 @@ import java.io.IOException;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.openrdf.model.Model;
-import org.openrdf.model.impl.LinkedHashModel;
-import org.openrdf.rio.RDFParseException;
+import org.eclipse.rdf4j.model.Model;
+import org.eclipse.rdf4j.model.impl.LinkedHashModel;
+import org.eclipse.rdf4j.rio.RDFParseException;
 
 public class OntoReaderTest {
 
