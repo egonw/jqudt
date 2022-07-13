@@ -32,7 +32,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.version>4.13.1</junit.version>
-    <rdf4j.version>2.0.3</rdf4j.version>
+    <rdf4j.version>3.7.7</rdf4j.version>
   </properties>
 
   <scm>
