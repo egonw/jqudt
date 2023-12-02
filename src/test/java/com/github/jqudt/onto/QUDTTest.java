@@ -6,16 +6,16 @@ package com.github.jqudt.onto;
 
 import java.io.IOException;
 
+import org.eclipse.rdf4j.model.IRI;
+import org.eclipse.rdf4j.rio.RDFParseException;
 import org.junit.Assert;
 import org.junit.Test;
-import org.eclipse.rdf4j.model.URI;
-import org.eclipse.rdf4j.rio.RDFParseException;
 
 public class QUDTTest {
 
 	@Test
 	public void testUnitOntology() throws RDFParseException, IOException {
-		URI symbol = QUDT.SYMBOL;
+		IRI symbol = QUDT.SYMBOL;
 		Assert.assertEquals(QUDT.namespace, symbol.getNamespace());
 		Assert.assertEquals("symbol", symbol.getLocalName());
 	}

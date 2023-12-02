@@ -1,4 +1,4 @@
-/* Copyright (C) 2012,2019  Egon Willighagen <egonw@users.sf.net>
+/* Copyright (C) 2012,2019,2023  Egon Willighagen <egonw@users.sf.net>
  *
  * License: new BSD
  */
@@ -10,14 +10,15 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import org.eclipse.rdf4j.model.IRI;
 import org.eclipse.rdf4j.model.Model;
 import org.eclipse.rdf4j.model.Statement;
 import org.eclipse.rdf4j.model.ValueFactory;
 import org.eclipse.rdf4j.model.impl.LinkedHashModel;
-import org.eclipse.rdf4j.model.impl.ValueFactoryImpl;
+import org.eclipse.rdf4j.model.impl.ValidatingValueFactory;
 import org.eclipse.rdf4j.model.vocabulary.RDF;
 import org.eclipse.rdf4j.model.vocabulary.RDFS;
-import org.eclipse.rdf4j.model.vocabulary.XMLSchema;
+import org.eclipse.rdf4j.model.vocabulary.XSD;
 
 import com.github.jqudt.Multiplier;
 import com.github.jqudt.Unit;
@@ -27,8 +28,10 @@ public class UnitFactory {
 	private Model repos;
 
 	private static UnitFactory factory = null;
+	private ValueFactory f = null;
 
 	private UnitFactory() {
+		this.f = new ValidatingValueFactory();
 		repos = new LinkedHashModel();
 		String[] ontologies = {
 			"unit", "qudt", "quantity", "ops"
@@ -62,8 +65,7 @@ public class UnitFactory {
 	public Unit getUnit(URI resource) {
 		if (resource == null) throw new IllegalArgumentException("The URI cannot be null");
 
-		ValueFactory f = ValueFactoryImpl.getInstance();
-		org.eclipse.rdf4j.model.URI uri = f.createURI(resource.toString());
+		IRI uri = f.createIRI(resource.toString());
 		
 		Unit unit = new Unit();
 		unit.setResource(resource);
@@ -87,8 +89,8 @@ public class UnitFactory {
 					unit.setLabel(statement.getObject().stringValue());
 				} else if (statement.getPredicate().equals(RDF.TYPE)) {
 					Object type = statement.getObject();
-					if (type instanceof org.eclipse.rdf4j.model.URI) {
-						org.eclipse.rdf4j.model.URI typeURI = (org.eclipse.rdf4j.model.URI)type;
+					if (type instanceof IRI) {
+						IRI typeURI = (IRI)type;
 						if (!shouldBeIgnored(typeURI)) {
 							unit.setType(new URI(typeURI.stringValue()));
 						}
@@ -108,15 +110,14 @@ public class UnitFactory {
 	public List<Unit> findUnits(String symbol) {
 		if (symbol == null) throw new IllegalArgumentException("The symbol cannot be null");
 
-		ValueFactory f = ValueFactoryImpl.getInstance();
-		Model statements = repos.filter(null, QUDT.ABBREVIATION, f.createLiteral(symbol, XMLSchema.STRING));
+		Model statements = repos.filter(null, QUDT.ABBREVIATION, f.createLiteral(symbol, XSD.STRING));
 		if (statements.isEmpty()) return Collections.emptyList();
 		List<Unit> foundUnits = new ArrayList<Unit>();
 		for (Statement statement : statements) {
 			Object type = statement.getSubject();
 			try {
-				if (type instanceof org.eclipse.rdf4j.model.URI) {
-					org.eclipse.rdf4j.model.URI typeURI = (org.eclipse.rdf4j.model.URI)type;
+				if (type instanceof IRI) {
+					IRI typeURI = (IRI)type;
 					foundUnits.add(getUnit(typeURI.toString()));
 				}
 			} catch (Exception exception) {
@@ -139,8 +140,7 @@ public class UnitFactory {
 	public List<String> getURIs(URI type) {
 		if (type == null) throw new IllegalArgumentException("The type cannot be null");
 
-		ValueFactory f = ValueFactoryImpl.getInstance();
-		org.eclipse.rdf4j.model.URI uri = f.createURI(type.toString());
+		IRI uri = f.createIRI(type.toString());
 		
 		try {
 			Model statements = repos.filter(null, null, uri);
@@ -157,7 +157,7 @@ public class UnitFactory {
 		}
 	}
 
-	private boolean shouldBeIgnored(org.eclipse.rdf4j.model.URI typeURI) {
+	private boolean shouldBeIgnored(IRI typeURI) {
 		// accept anything outside the QUDT namespace
 		if (!typeURI.getNamespace().equals(QUDT.namespace)) return false;
 
