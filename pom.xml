@@ -30,7 +30,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.version>4.13.2</junit.version>
     <rdf4j.version>5.2.2</rdf4j.version>
-    <jackson.version>2.21.1</jackson.version>
+    <jackson.version>2.22.0</jackson.version>
   </properties>
   <scm>
     <connection>scm:git:https://github.com/egonw/jqudt.git</connection>
