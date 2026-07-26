@@ -15,7 +15,7 @@ jobs:
     name: Java ${{ matrix.java }}
 
     steps:
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v7
     - name: Set up Java
       uses: actions/setup-java@v5
       with:
@@ -24,6 +24,6 @@ jobs:
     - name: Build with Maven
       run: mvn clean install -Dgpg.skip -Dmaven.javadoc.skip=true
     - name: push JaCoCo stats to codecov.io
-      uses: codecov/codecov-action@v5
+      uses: codecov/codecov-action@v7
       env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
