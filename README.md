@@ -24,14 +24,14 @@ Maven:
 <dependency>
   <groupId>com.github.egonw</groupId>
   <artifactId>jqudt</artifactId>
-  <version>1.5.2</version>
+  <version>1.5.3</version>
 </dependency>
 ```
 
 Groovy:
 
 ```groovy
-@Grab(group='com.github.egonw', module='jqudt', version='1.5.2')
+@Grab(group='com.github.egonw', module='jqudt', version='1.5.3')
 ```
 
 Quick demo
