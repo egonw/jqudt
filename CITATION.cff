@@ -7,7 +7,7 @@ authors:
   - family-names: Ansell
     given-names: Peter
 title: jQUDT
-version: 1.5.3
-date-released: 2026-07-26
+version: 1.5.4
+date-released: 2026-10-20
 doi: 10.5281/zenodo.3883587
 url: "https://github.com/egonw/jqudt"
